@@ -1,0 +1,42 @@
+Rapport oblig 4, INF2440
+
+Jeg har ikke fått denne til å kjøre slik den skal. Jeg har fått til a, b og c. Men d fungerer ikke. 
+
+C har jeg løst ved å først sette ny start og stopp verdi på trådene. Jeg har en egen metode for dette. Deretter akkumulerer jeg gjennom og finner ut hvor de forskjellige tallverdiene skal starte når de skal flyttes over. 
+
+Dette gjøres i hver sin tråd, derfor har jeg laget en egen jump verdi som sier hvor stort hopp det er mellom de forskjellige trådene. Etter at jump verdien er funnet blir trådene satt på ventav en CyclicBarrier som setter i gang en
+prossess som går gjennom hver tråd og oppdaterer hoppet mellom denne og den forrige tråden. Til sist settes en ny forløkke i gang som oppdaterer akkumulasjonsverdiene i sitt område opp mot det nye tallet som er kommet. inn. 
+
+
+I oppgave d får jeg nesten ut riktige verdier. Jeg har forsøkt å gjøre mange forskjellige forsøk på å få den til å fungere. 
+
+For å kompilere programmet bruk kommandoen:
+
+javac Oblig4.java
+
+og for å kjøre bruk kommandoen: 
+
+java Oblig4
+
+Da får du dette resultatet, men med andre tall ettersom de er random: 
+
+	Pa plass a[0] er: 0 		Pa plass b[0] er: 65
+	Pa plass a[1] er: 13 		Pa plass b[1] er: 41
+	Pa plass a[2] er: 0 		Pa plass b[2] er: 13
+	Pa plass a[3] er: 20 		Pa plass b[3] er: 20
+	Pa plass a[4] er: 23 		Pa plass b[4] er: 30
+	Pa plass a[5] er: 0 		Pa plass b[5] er: 70
+	Pa plass a[6] er: 41 		Pa plass b[6] er: 23
+	Pa plass a[7] er: 47 		Pa plass b[7] er: 47
+	Pa plass a[8] er: 47 		Pa plass b[8] er: 95
+	Pa plass a[9] er: 70 		Pa plass b[9] er: 47
+	Pa plass a[10] er: 34 		Pa plass b[10] er: 0
+	Pa plass a[11] er: 52 		Pa plass b[11] er: 0
+	Pa plass a[12] er: 30 		Pa plass b[12] er: 0
+	Pa plass a[13] er: 10 		Pa plass b[13] er: 0
+	Pa plass a[14] er: 70 		Pa plass b[14] er: 0
+	Pa plass a[15] er: 83 		Pa plass b[15] er: 0
+	Pa plass a[16] er: 20 		Pa plass b[16] er: 0
+	Pa plass a[17] er: 13 		Pa plass b[17] er: 0
+	Pa plass a[18] er: 95 		Pa plass b[18] er: 0
+	Pa plass a[19] er: 47 		Pa plass b[19] er: 0
